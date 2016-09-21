@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+html,body{
+  height: 100%;
+}
+body {
+  font-family: ' メイリオ ','Hiragino Kaku Gothic Pro', sans-serif
+  border: medium solid #ff00ff;
+}
+/*謎の余白を消す*/
+.wrap {
+  overflow: hidden;
+}
+
+/*all*/
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.element {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+
+
+/*Herder*/
+.Header {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(242,242,242);
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10;
+}
+.header-left {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-left: 25px;
+    color: #999999;
+}
+.header-right {
+  margin-right: 25px;
+  padding-top: 7px;
+}
+.header-right li {
+  padding-right: 25px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #999999;
+}
+.navigation a :hover {
+  color: #333333
+}
+
+
+/*top-wrapper*/
+.top-wrapper p {
+  font-size: 25px;
+  color:#fff;
+}
+.top-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color:#fff;
+  padding-top: 50px;
+}
+.top-wrapper {
+  background: url("top-image.jpg") center center / cover;
+  width:auto;
+  height:400px;
+}
+.cover{
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+/*about*/
+.about-message {
+  width: 65%;
+}
+
+/*Mentor*/
+.Mentor {
+  background-color: rgb(10,85,145);
+  color: #fff;
+}
+.Mentor-image , .Mentor-info{
+  padding-top: 20px;
+}
+.ceo-image {
+  width: auto;
+  height: 340px;
+}
+.Mentor-image p {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.image-box {
+  padding-left: 150px;
+}
+.info-message {
+  padding-left: 50px;
+}
+
+/*career*/
+.career{
+  font-size: 24px;
+  margin-top: 30px;
+}
+.table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 300px;
+}
+.table .career-info {
+  text-align: left;
+}
+
+
+/*service*/
+.Service {
+  background-color: rgb(242,242,242);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.servise-box{
+  background-color: #fff;
+  position: relative;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+.s-icon {
+  border-radius: 50%;
+  height: 50px;
+  width: :50px;
+  position: absolute;
+  top:-25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.s-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/*Clients*/
+.image {
+  margin-bottom: 40px;
+}
+.logoa {
+  height: 60px;
+}
+.logo {
+  height: 50px;
+}
+.logob {
+  height: 35px;
+}
+.logoc {
+  height: 33px;
+}
+.logod {
+  height: 30px;
+}
+
+/*access*/
+.Access{
+    background-color: rgb(242,242,242);
+}
+.g-map {
+  height: 500px;
+  width: 90%;
+}
+.access-address {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/*contact*/
+.Contact {
+  background-color: rgb(10,85,145);
+  color: #fff;
+}
+.form {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 70%;
+}
+
+/*footer*/
+footer {
+  color: #999999;
+  padding-top:15px;
+}
+
+
+
+
+/*
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*767px以下 xs */
+@media (max-width: 767px) {
+  /*all*/
+  .subtitle {
+    font-size: 25px
+  }
+
+.element {
+  padding-top: 20px;
+}
+  /*header*/
+  .navigation-right {
+    font-size: 10px;
+    visibility : hidden;
+  }
+  .header-right {
+    display: none;
+  }
+
+  /*top-wrapper*/
+  .top-logo {
+    font-size: 30px
+  }
+  .top-wrapper p {
+    font-size: 12px ;
+    margin: 0px 20px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .top-wrapper {
+   height:250px;
+  }
+.top-logo {
+   padding-top: 20px;
+  }
+
+  /*about*/
+  .about-message {
+    font-size: 12px;
+    width: 85%;
+  }
+
+  /*mentor*/
+  .ceo-image {
+    height: 200px;
+  }
+  .Mentor-image p {
+    font-size: 15px;
+  }
+  .info-message {
+    padding-left:0px;
+    text-align: center;
+  }
+  .info-message p {
+    font-size: 10px;
+    margin:2px;
+  }
+  .image-box {
+    padding-left: 0px;
+  }
+  .Mentor-info {
+    padding: 5px;
+  }
+
+
+  /*clients*/
+  .image {
+    margin-bottom: 20px;
+  }
+  .logoa {
+    height: 50px;
+  }
+  .logo {
+    height: 25px;
+  }
+  .logob {
+    height: 23px;
+  }
+  .logoc {
+    height: 15px;
+  }
+  .logod {
+    height: 15px;
+  }
+  .logoe {
+    height: 17px;
+  }
+  .logo5 {
+    height: 35px;
+  }
+  .logo6 {
+    height: 35px;
+  }
+  .logo7 {
+    height: 25px;
+  }
+  .logo14 {
+    height: 25px;
+    padding-bottom: 5px;
+  }
+
+
+ /*access*/
+  .g-map {
+    height: 300px;
+  }
+  .access-address {
+    font-size: 12px;
+    margin: 5px 0;
+
+  }
+
+  /*contact*/
+  .Contact {
+    padding: 15px;
+  }
+  .form {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  /* footer*/
+  footer p {
+    font-size:10px;
+  }
+
+
+}
+
+/*768px-991px sm */
+@media (min-width: 768px) and (max-width: 991px){
+
+  .image-box {
+    padding-left: 0px;
+  }
+    .info-message {
+    padding-left:0px;
+    text-align: center;
+  }
+}
+
+/*992px-1199px md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .image-box {
+    padding-left: 0px;
+  }
+}
+/*1200px以上 lg */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
